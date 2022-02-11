@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "togglepvp",
+  "version": "${version}",
+
+  "name": "Toggle PVP",
+  "description": "Allow server players to toggle pvp state.",
+  "authors": [
+    "Braunly"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/toggle-pvp",
+    "sources": "https://github.com/Braunly/toggle-pvp"
+  },
+
+  "license": "LGPLv3.0",
+  "icon": "assets/togglepvp/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "me.braunly.togglepvp.TogglePvp"
+    ]
+  },
+  "mixins": [
+    "togglepvp.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.13.1",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
