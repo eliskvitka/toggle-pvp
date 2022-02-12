@@ -4,13 +4,20 @@
   "version": "${version}",
 
   "name": "Toggle PVP",
-  "description": "Allow server players to toggle pvp state.",
+  "description": "Allow server players to toggle pvp status for themselves.",
   "authors": [
-    "Braunly"
+    {
+      "name": "Braunly",
+      "contact": {
+        "sources": "https://github.com/Braunly",
+        "homepage": "https://braunly.me/"
+      }
+    }
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/toggle-pvp",
-    "sources": "https://github.com/Braunly/toggle-pvp"
+    "sources": "https://github.com/Braunly/toggle-pvp",
+    "issues": "https://github.com/Braunly/toggle-pvp/issues"
   },
 
   "license": "LGPLv3.0",
@@ -31,9 +38,10 @@
     "fabric": "*",
     "minecraft": "1.18.x",
     "java": ">=17",
-    "fabric-permissions-api-v0": "*"
+    "fabric-permissions-api-v0": "*",
+    "playerabilitylib": ">=1.5.0"
   },
   "suggests": {
-    "another-mod": "*"
+    "luckperms": ">=5.3"
   }
 }
