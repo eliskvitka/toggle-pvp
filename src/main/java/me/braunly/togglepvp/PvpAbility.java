@@ -10,11 +10,6 @@ public class PvpAbility {
     private static final AbilitySource abilitySource = Pal.getAbilitySource(id);
 
     public static void init() {
-        PlayerAbilityUpdatedCallback.event(PVP_ABILITY).register((player, nowEnabled) ->
-                // Refresh the flight tracker, will call PlayerAbilityEnableCallback for every source
-                VanillaAbilities.ALLOW_FLYING.getTracker(player).refresh(true)
-        );
-
         PlayerAbilityEnableCallback.EVENT.register((player, ability, abilitySource) -> {
             if (ability == PVP_ABILITY) {
                 return !PVP_ABILITY.isEnabledFor(player);

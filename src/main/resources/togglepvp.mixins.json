@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "server": [
-    "TogglePvpMixin"
+    "ServerPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

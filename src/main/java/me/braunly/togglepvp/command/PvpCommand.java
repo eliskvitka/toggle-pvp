@@ -23,13 +23,8 @@ public class PvpCommand implements Command<ServerCommandSource> {
     }
     @Override
     public int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
+        // TODO: add cooldown check
         return setStatus(context.getSource().getPlayer(), !PvpAbility.get(context.getSource().getPlayer()));
-    }
-
-    public int set(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
-        ServerPlayerEntity sender = context.getSource().getPlayer();
-        boolean pvpStatus = StringArgumentType.getString(context, "pvp_status").equalsIgnoreCase("on");
-        return setStatus(sender, pvpStatus);
     }
 
     public int setOther(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
