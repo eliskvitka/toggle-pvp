@@ -1,4 +1,4 @@
-# Toggle PVP mod
+# [Toggle PVP mod](https://www.curseforge.com/minecraft/mc-mods/toggle-pvp)
 ![license](https://img.shields.io/github/license/braunly/toggle-pvp)
 ![fabric](https://img.shields.io/badge/modloader-Fabric-1976d2?style=flat-square)
 ![server only](https://img.shields.io/badge/environment-server-4caf50?style=flat-square)  
@@ -12,7 +12,8 @@ It ignores `server.properties` pvp flag currently
 - Also, you need some permission manager mod, that works with Fabric Permissions API. I suggest [LuckPerms](https://luckperms.net/download)  
 ## Installation
 - Install all required libraries  
-- Copy this mod to `mods/` folder  
+- [Download mod](https://www.curseforge.com/minecraft/mc-mods/toggle-pvp/files)
+- Copy it to `mods/` folder  
 
 ## Commands and permissions
 | Command       | Permission    | Description |
