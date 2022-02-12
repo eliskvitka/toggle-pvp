@@ -1,4 +1,8 @@
 # Toggle PVP mod
+![license](https://img.shields.io/github/license/braunly/toggle-pvp)
+![fabric](https://img.shields.io/badge/modloader-Fabric-1976d2?style=flat-square)
+![server only](https://img.shields.io/badge/environment-server-4caf50?style=flat-square)  
+
 Simple Fabric server-side mod (plugin), that allow your players to enable/disable PVP for themselves.  
 It ignores `server.properties` pvp flag currently
 ## Requirements
