@@ -13,17 +13,4 @@ public class Perms {
         // Ignore cooldown settings for pvp status changing
         public static final String ignoreCooldown = TogglePvp.MOD_ID + ".ignorecooldown";
     }
-
-    static void init() {
-        PermissionCheckEvent.EVENT.register((source, permission) -> {
-            if (isSuperAdmin(source)) {
-                return TriState.TRUE;
-            }
-            return TriState.DEFAULT;
-        });
-    }
-
-    private static boolean isSuperAdmin(CommandSource source) {
-        return source.hasPermissionLevel(4);
-    }
 }
