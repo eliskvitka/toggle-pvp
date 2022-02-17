@@ -19,10 +19,10 @@ public class CommandRegistry {
 
         LiteralArgumentBuilder<ServerCommandSource> pvpBuilder = CommandManager.literal("pvp");
 
-        pvpBuilder.requires(Permissions.require(Perms.Registry.base))
+        pvpBuilder.requires(Permissions.require(Perms.Registry.base, 2))
                 .executes(new PvpCommand())
                 .then(CommandManager.argument("target_player", EntityArgumentType.player())
-                        .requires(Permissions.require(Perms.Registry.others))
+                        .requires(Permissions.require(Perms.Registry.others, 2))
                         .then(CommandManager.argument("pvp_status", StringArgumentType.word()).suggests(PvpCommand.suggestedState())
                                 .executes(new PvpCommand()::setOther)));
 
