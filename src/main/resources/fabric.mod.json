@@ -36,12 +36,12 @@
   "depends": {
     "fabricloader": ">=0.14.6",
     "fabric": "*",
-    "minecraft": "1.19.x",
+    "minecraft": "1.20.x",
     "java": ">=17",
     "fabric-permissions-api-v0": "*",
-    "playerabilitylib": ">=1.6.0"
+    "playerabilitylib": ">=1.8.0"
   },
   "suggests": {
-    "luckperms": ">=5.4.28"
+    "luckperms": ">=5.4.108"
   }
 }

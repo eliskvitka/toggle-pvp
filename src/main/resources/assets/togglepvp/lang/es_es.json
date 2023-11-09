@@ -1,0 +1,8 @@
+{
+  "message.togglepvp.pvp_status": "estado PVP",
+  "message.togglepvp.pvp_status.other": "Estado PVP para ",
+  "message.togglepvp.pvp_state.enabled": "ACTIVADO",
+  "message.togglepvp.pvp_state.disabled": "DESACTIVADO",
+  "command.autocomplete.togglevpvp.enable": "activado",
+  "command.autocomplete.togglevpvp.disable": "desactivado"
+}
