@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.12-SNAPSHOT'
+	id 'fabric-loom' version '1.4-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -13,12 +13,8 @@ group = project.maven_group
 repositories {
 	maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 	maven {
-		name = 'Ladysnake Mods'
-		url = 'https://ladysnake.jfrog.io/artifactory/mods'
-		content {
-			includeGroup 'io.github.ladysnake'
-			includeGroupByRegex 'io\\.github\\.onyxstudios.*'
-		}
+		name = "Ladysnake Libs"
+		url = uri("https://ladysnake.jfrog.io/artifactory/mods")
 	}
 }
 
@@ -31,10 +27,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "me.lucko:fabric-permissions-api:${project.fpa_version}"
+	include(modImplementation "me.lucko:fabric-permissions-api:${project.fpa_version}")
 
-	modImplementation "io.github.ladysnake:PlayerAbilityLib:${project.pal_version}"
-}
+	modImplementation "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
+	include "io.github.ladysnake:PlayerAbilityLib:${pal_version}"}
 
 processResources {
 	inputs.property "version", project.version
