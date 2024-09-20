@@ -1,47 +1,34 @@
 {
-  "schemaVersion": 1,
-  "id": "togglepvp",
-  "version": "${version}",
-
-  "name": "Toggle PVP",
-  "description": "Allow server players to toggle pvp status for themselves.",
-  "authors": [
-    {
-      "name": "Braunly",
-      "contact": {
-        "sources": "https://github.com/Braunly",
-        "homepage": "https://braunly.me/"
-      }
-    }
-  ],
-  "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/toggle-pvp",
-    "sources": "https://github.com/Braunly/toggle-pvp",
-    "issues": "https://github.com/Braunly/toggle-pvp/issues"
-  },
-
-  "license": "LGPLv3.0",
-  "icon": "assets/togglepvp/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "me.braunly.togglepvp.TogglePvp"
-    ]
-  },
-  "mixins": [
-    "togglepvp.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.14.6",
-    "fabric": "*",
-    "minecraft": "1.21.x",
-    "java": ">=17",
-    "fabric-permissions-api-v0": "*",
-    "playerabilitylib": ">=1.10.0"
-  },
-  "suggests": {
-    "luckperms": ">=5.4.137"
-  }
+	"schemaVersion": 1,
+	"id": "togglepvp",
+	"version": "${version}",
+	"name": "slash-pvp",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/slash-pvp/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"main": [
+			"me.braunly.togglepvp.TogglePvp"
+		]
+	},
+	"mixins": [
+		"slash-pvp.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
 }

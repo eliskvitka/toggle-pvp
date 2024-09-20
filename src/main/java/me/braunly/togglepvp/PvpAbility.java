@@ -1,7 +1,11 @@
 package me.braunly.togglepvp;
 
 import io.github.ladysnake.pal.*;
+import me.braunly.togglepvp.command.PvpCommand;
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 
 public class PvpAbility {
@@ -16,6 +20,17 @@ public class PvpAbility {
             }
             return true;
         });
+
+        AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+            if (player instanceof ServerPlayerEntity && entity instanceof ServerPlayerEntity) {
+                ServerPlayerEntity attackingPlayer = (ServerPlayerEntity) player;
+                ServerPlayerEntity targetPlayer = (ServerPlayerEntity) entity;
+                PvpCommand.resetCooldown(targetPlayer, attackingPlayer);
+            }
+            return ActionResult.PASS;
+        });
+
+
     }
 
     public static void set(PlayerEntity player, boolean state) {
