@@ -1,0 +1,10 @@
+{
+  "message.togglepvp.pvp_status": "Estado PVP ",
+  "message.togglepvp.pvp_status.other": "Estado PVP para ",
+  "message.togglepvp.pvp_state.enabled": "§cACTIVADO",
+  "message.togglepvp.pvp_state.disabled": "§aDESACTIVADO",
+  "message.togglepvp.cooldown": "Debes esperar %s segundos antes de usar /pvp de nuevo.",
+  "message.togglepvp.combat_cooldown": "Has entrado en combate, ahora debes esperar para usar /pvp de nuevo.",
+  "command.autocomplete.togglevpvp.enable": "activado",
+  "command.autocomplete.togglevpvp.disable": "desactivado"
+}
