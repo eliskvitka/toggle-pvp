@@ -1,11 +1,11 @@
-package me.braunly.togglepvp.command;
+package me.kvitka.togglepvp.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
-import me.braunly.togglepvp.PvpAbility;
+import me.kvitka.togglepvp.PvpAbility;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;

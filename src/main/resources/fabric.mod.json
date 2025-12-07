@@ -7,17 +7,17 @@
   "description": "Allow server players to toggle pvp status for themselves.",
   "authors": [
     {
-      "name": "Braunly",
+      "name": "ElisKvitka",
       "contact": {
-        "sources": "https://github.com/Braunly",
-        "homepage": "https://braunly.me/"
+        "sources": "https://github.com/eliskvitka",
+        "homepage": "https://kvitka.me/"
       }
     }
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/toggle-pvp",
-    "sources": "https://github.com/Braunly/toggle-pvp",
-    "issues": "https://github.com/Braunly/toggle-pvp/issues"
+    "sources": "https://github.com/eliskvitka/toggle-pvp",
+    "issues": "https://github.com/eliskvitka/toggle-pvp/issues"
   },
 
   "license": "LGPLv3.0",
@@ -26,7 +26,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "me.braunly.togglepvp.TogglePvp"
+      "me.kvitka.togglepvp.TogglePvp"
     ]
   },
   "mixins": [

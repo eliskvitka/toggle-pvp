@@ -1,6 +1,6 @@
-package me.braunly.togglepvp.mixin;
+package me.kvitka.togglepvp.mixin;
 
-import me.braunly.togglepvp.PvpAbility;
+import me.kvitka.togglepvp.PvpAbility;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;

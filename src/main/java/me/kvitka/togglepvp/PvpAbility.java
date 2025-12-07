@@ -1,4 +1,4 @@
-package me.braunly.togglepvp;
+package me.kvitka.togglepvp;
 
 import io.github.ladysnake.pal.*;
 import net.minecraft.entity.player.PlayerEntity;

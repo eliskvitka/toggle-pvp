@@ -1,12 +1,11 @@
 {
   "required": true,
-  "minVersion": "0.8",
-  "package": "me.braunly.togglepvp.mixin",
-  "compatibilityLevel": "JAVA_17",
+  "package": "me.kvitka.togglepvp.mixin",
+  "compatibilityLevel": "JAVA_21",
   "mixins": [
   ],
   "server": [
-    "ServerPlayerEntityMixin"
+    "me.kvitka.togglepvp.mixin.ServerPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

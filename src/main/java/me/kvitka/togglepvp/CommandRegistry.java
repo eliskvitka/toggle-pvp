@@ -1,10 +1,10 @@
-package me.braunly.togglepvp;
+package me.kvitka.togglepvp;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.builder.LiteralArgumentBuilder;
 import com.mojang.brigadier.tree.RootCommandNode;
-import me.braunly.togglepvp.command.PvpCommand;
+import me.kvitka.togglepvp.command.PvpCommand;
 import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.command.CommandRegistryAccess;
 import net.minecraft.command.argument.EntityArgumentType;

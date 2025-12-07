@@ -1,4 +1,4 @@
-package me.braunly.togglepvp;
+package me.kvitka.togglepvp;
 
 public class Perms {
     public static final class Registry {
