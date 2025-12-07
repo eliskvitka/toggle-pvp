@@ -5,7 +5,7 @@
   "mixins": [
   ],
   "server": [
-    "me.kvitka.togglepvp.mixin.ServerPlayerEntityMixin"
+    "ServerPlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1
