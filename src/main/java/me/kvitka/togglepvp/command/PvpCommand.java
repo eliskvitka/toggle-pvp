@@ -5,7 +5,9 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.brigadier.suggestion.SuggestionProvider;
+import me.kvitka.togglepvp.Perms;
 import me.kvitka.togglepvp.PvpAbility;
+import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -20,6 +22,12 @@ public class PvpCommand implements Command<ServerCommandSource> {
     @Override
     public int run(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
         // TODO: add cooldown check
+        if (Permissions.check(context.getSource(), Perms.Registry.forceEnable, false)
+                || Permissions.check(context.getSource(), Perms.Registry.forceDisable, false)) {
+            context.getSource().sendMessage(Text.translatable("message.togglepvp.forced")
+                    .styled(s -> s.withColor(Formatting.RED)));
+            return 0;
+        }
         return setStatus(context.getSource().getPlayer(), !PvpAbility.get(context.getSource().getPlayer()));
     }
 

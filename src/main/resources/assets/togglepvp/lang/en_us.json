@@ -3,6 +3,7 @@
   "message.togglepvp.pvp_status.other": "PVP status for ",
   "message.togglepvp.pvp_state.enabled": "§cENABLED",
   "message.togglepvp.pvp_state.disabled": "§aDISABLED",
+  "message.togglepvp.forced": "§cYou can't change PVP status!",
   "command.autocomplete.togglevpvp.enable": "on",
   "command.autocomplete.togglevpvp.disable": "off"
 }

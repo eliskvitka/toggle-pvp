@@ -1,6 +1,7 @@
 package me.kvitka.togglepvp;
 
 import io.github.ladysnake.pal.*;
+import me.lucko.fabric.api.permissions.v0.Permissions;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 
@@ -27,6 +28,12 @@ public class PvpAbility {
     }
 
     public static boolean get(PlayerEntity player) {
+        if (Permissions.check(player, Perms.Registry.forceEnable, false)) {
+            return true;
+        }
+        if (Permissions.check(player, Perms.Registry.forceDisable, false)) {
+            return false;
+        }
         return PVP_ABILITY.isEnabledFor(player);
     }
 }
