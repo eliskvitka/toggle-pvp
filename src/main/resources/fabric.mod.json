@@ -34,14 +34,14 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.15.10",
-    "fabric": "*",
-    "minecraft": "~1.20.6",
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.10",
     "java": ">=21",
+    "fabric-api": "*",
     "fabric-permissions-api-v0": "*",
-    "playerabilitylib": ">=1.8.0"
+    "playerabilitylib": ">=1.15.0"
   },
   "suggests": {
-    "luckperms": ">=5.4.125"
+    "luckperms": ">=5.5.20"
   }
 }
