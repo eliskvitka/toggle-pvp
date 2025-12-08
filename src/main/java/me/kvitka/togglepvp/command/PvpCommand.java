@@ -24,7 +24,7 @@ public class PvpCommand implements Command<ServerCommandSource> {
     }
 
     public int setOther(CommandContext<ServerCommandSource> context) throws CommandSyntaxException {
-        ServerPlayerEntity sender = context.getSource().getPlayer();
+        ServerCommandSource sender = context.getSource();
         ServerPlayerEntity targetPlayer = EntityArgumentType.getPlayer(context, "target_player");
         boolean pvpStatus = StringArgumentType.getString(context, "pvp_status").equalsIgnoreCase("on");
         if (sender != null) {
@@ -37,7 +37,7 @@ public class PvpCommand implements Command<ServerCommandSource> {
                             ? Text.translatable("message.togglepvp.pvp_state.enabled")
                             .styled(s -> s.withColor(Formatting.RED)).getString()
                             : Text.translatable("message.togglepvp.pvp_state.disabled")
-                            .styled(s -> s.withColor(Formatting.GREEN)).getString()), false);
+                            .styled(s -> s.withColor(Formatting.GREEN)).getString()));
         }
         return setStatus(targetPlayer, pvpStatus);
     }
