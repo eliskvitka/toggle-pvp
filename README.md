@@ -15,11 +15,12 @@ It ignores `server.properties` pvp flag currently
 - Copy it to `mods/` folder  
 
 ## Commands and permissions
-| Command       | Permission    | Description |
-| ------------- | ------------- | ------------- |
-| /pvp | togglepvp.base  | Toggle PVP status for self |
-| /pvp <target_player> <on/off>  | togglepvp.others  | Toggle PVP status for other player (Suggests this for admins) |
-| - | togglepvp.ignorecooldown  | Ignore command cooldown (Not implemented yet) |
+| Command                       | Permission               | Description                                                                                            |
+|-------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------|
+| /pvp                          | togglepvp.base           | Toggle PVP status for self                                                                             |
+| /pvp <target_player> <on/off> | togglepvp.others         | Toggle PVP status for other player (Suggests this for admins)                                          |
+| -                             | togglepvp.force.enable   | Enable players PVP status. Players will not be able to change it even if they have ".base" permission                                                                              |
+| - | togglepvp.force.disable | Disable players PVP status. Players will not be able to change it even if they have ".base" permission |                                   |                                                              |
 
 ## Configuration
 Will be added later  
